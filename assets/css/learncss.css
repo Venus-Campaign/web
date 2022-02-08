@@ -1,0 +1,20 @@
+.card {
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.card-img-top{
+  border-radius: 5px;
+}
+
+.btn{
+  border-radius: 30px;
+  background-color: #FFA5AF;
+  color: white;
+  border-color:  #6A1A7D;
+  border-width: 4px;
+}
+.btn :hover {
+  background-color:  #6A1A7D;
+ 
+}

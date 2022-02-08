@@ -1,0 +1,42 @@
+a{
+    color: #e03a3c;
+}
+
+a:hover{
+    color: #e76668;
+    text-decoration: none;
+}
+
+.team .member{
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: white;
+}
+
+.team .member .member-img{
+    position: relative;
+    overflow: hidden;
+}
+.team.member .member-info{
+    padding: 25px 15px;
+}
+
+.team.member .member-info h4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #111;
+}
+img{
+     height: 140px;
+     width: 200px;
+     
+     padding: 0 6px;
+}
+.card-img-top {
+    width: 200%;
+    height: 15vw;
+    min-height: 370px;
+    object-fit: cover;
+}

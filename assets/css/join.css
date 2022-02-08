@@ -1,0 +1,25 @@
+
+.btn :hover {
+  background: #FFA5AF;
+  color: #F5F5F5;
+ 
+}
+
+.form-control{
+  border-radius: 5px;
+}
+.btn{
+  border: none;
+  padding: 8px;
+  display: inline-block;
+  color: white;
+  background-color: #FFA5AF;
+  cursor: pointer;
+  width: 10%;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 500px;
+  margin-bottom: 20px;
+
+}
