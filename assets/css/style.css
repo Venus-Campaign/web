@@ -1820,3 +1820,7 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.col-m-t{
+  margin-top: 1.5rem;
+}
