@@ -195,3 +195,59 @@
   });
 
 })(jQuery);
+
+//For showing selected button's form part
+const lookbook = document.querySelector(".lookbook")
+        const shetales = document.querySelector(".shetales")
+        const shexplores = document.querySelector(".shexplores")
+        const designing = document.querySelector(".designing")
+        const webDevelopment = document.querySelector(".web_development")
+        const communityFormation = document.querySelector(".community_formation")
+        const sections = [lookbook, shetales, shexplores, designing, webDevelopment, communityFormation];
+        // console.log(lookbook, shetales, shexplores, designing, webDevelopment, communityFormation);
+        
+        function view_section(name) {
+          if(name==="lookbook") {
+            lookbook.style.display = "block"
+            sections.forEach(section => section != lookbook ? section.style.display = "none" : null)
+          }
+          if(name==="shetales") {
+            shetales.style.display = "block"
+            sections.forEach(section => section != shetales ? section.style.display = "none" : null)
+          }
+          if(name==="shexplores") {
+            shexplores.style.display = "block"
+            sections.forEach(section => section != shexplores ? section.style.display = "none" : null)
+          }
+          if(name==="designing") {
+            designing.style.display = "block"
+            sections.forEach(section => section != designing ? section.style.display = "none" : null)
+          }
+          if(name==="web_development") {
+            webDevelopment.style.display = "block"
+            sections.forEach(section => section != webDevelopment ? section.style.display = "none" : null)
+          }
+          if(name==="community_formation") {
+            communityFormation.style.display = "block"
+            sections.forEach(section => section != communityFormation ? section.style.display = "none" : null)
+          }
+        }
+
+          lookbook.style.display = "none"
+          shetales.style.display = "none"
+          shexplores.style.display = "none"
+          designing.style.display = "none"
+          webDevelopment.style.display = "none"
+          communityFormation.style.display = "none"
+
+          const inputs = Array.from(document.querySelectorAll(".requirements input"))
+          inputs.forEach(input => {
+            input.addEventListener("change", () => {
+              inputs.forEach(i => {
+                if(i.checked) {
+                  // console.log(i.value)
+                  view_section(i.value)
+                }
+              })
+            })
+          })

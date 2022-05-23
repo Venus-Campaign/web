@@ -287,7 +287,7 @@
       <div class="form-group row">
         <label for="inputInstaLink" class="col-sm-2 col-form-label">Instagram link</label>
         <div class="col-sm-10">
-          <input type="url" class="form-control" id="inlineFormInputUrl" placeholder="Enter the Instagram link" required>
+          <input type="url" name="Instagram link" class="form-control" id="inlineFormInputUrl" placeholder="Enter the Instagram link" required>
           <div class="invalid-feedback">
             Please provide a valid url.
           </div>
@@ -296,7 +296,7 @@
       <div class="form-group row">
         <label for="inputName1" class="col-sm-2 col-form-label">Name of startup</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputName1" placeholder="Enter the name" required>
+          <input type="text" name="Name of startup" class="form-control" id="inputName1" placeholder="Enter the name" required>
           <div class="invalid-feedback">
             Please provide a valid name.
           </div>
@@ -305,49 +305,49 @@
       <div class="form-group row">
         <label for="inputName2" class="col-sm-2 col-form-label">Name of entrepreneur</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputName2" placeholder="Enter the name" required>
+          <input type="text" name="Name of entrepreneur" class="form-control" id="inputName2" placeholder="Enter the name" required>
           <div class="invalid-feedback">
             Please provide a valid name.
           </div>
         </div>
       </div>
       
-      <fieldset class="form-group">
+      <fieldset class="form-group requirements">
         <div class="row">
           <legend class="col-form-label col-sm-2 pt-0">Requirements </legend>
-          <div class="col-sm-10">
+          <div class="col-sm-10 requirements-radios">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios8" value="option1">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios8" value="lookbook">
               <label class="form-check-label" for="gridRadios8">
                 Lookbook
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios9" value="option2">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios9" value="shetales">
               <label class="form-check-label" for="gridRadios9">
                 She tales
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10" value="option1">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios10" value="shexplores">
               <label class="form-check-label" for="gridRadios10">
                 SheXplores
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios11" value="option2">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios11" value="designing">
               <label class="form-check-label" for="gridRadios11">
                 Designing
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios12" value="option2">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios12" value="web_development">
               <label class="form-check-label" for="gridRadios12">
                 Website development
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios13" value="option2">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios13" value="community_formation">
               <label class="form-check-label" for="gridRadios13">
                 Community formation
               </label>
@@ -365,25 +365,25 @@
         <div class="form-group row">
           <label for="inputimage1" class="col-sm-2 col-form-label">Images of your work(10 in number)</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage1" name="img" accept="image/*" multiple>
+            <input type="file"  id="inputimage1" name="LookBook-images of work" accept="image/*" multiple>
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent1" class="col-sm-2 col-form-label">About the firm content(in 250 words) </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent1" placeholder="Enter the content">
+            <input type="text" class="form-control" id="inputcontent1" name="LookBook-About the firm content" placeholder="Enter the content">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputimage2" class="col-sm-2 col-form-label">2 solo picture of entrepreneur </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage2" name="img" accept="image/*" multiple>
+            <input type="file"  id="inputimage2" name="LookBook-2 solo picture of entrepreneur" accept="image/*" multiple>
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent2" class="col-sm-2 col-form-label">About the entrepreneur content(in 250 words) </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent2" placeholder="Enter the content">
+            <input type="text" name="LookBook-About the entrepreneur content" class="form-control" id="inputcontent2" placeholder="Enter the content">
           </div>
         </div>
       </div>
@@ -397,31 +397,31 @@
         <div class="form-group row">
           <label for="inputimage3" class="col-sm-2 col-form-label">8 solo pictures of entrepreneur</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage3" name="img" accept="image/*" multiple>
+            <input type="file"  id="inputimage3" name="SheTales-8 solo pictures of entrepreneur" accept="image/*" multiple>
           </div>
         </div>
         <div class="form-group row">
           <label for="inputvideo1" class="col-sm-2 col-form-label">Before video </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputvideo1" name="video" accept="video/*">
+            <input type="file"  id="inputvideo1" name="SheTales-Before video" accept="video/*">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent3" class="col-sm-2 col-form-label">About the firm content(in 250 words) </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent3" placeholder="Enter the content">
+            <input type="text" name="SheTales-About the firm content" class="form-control" id="inputcontent3" placeholder="Enter the content">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent4" class="col-sm-2 col-form-label">About the entrepreneur content(in 250 words) </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent4" placeholder="Enter the content">
+            <input type="text" name="SheTales-About the entrepreneur content" class="form-control" id="inputcontent4" placeholder="Enter the content">
           </div>
         </div>
       </div>
 
       <!--SheXplores Form-->
-      <div class="Shexplores">
+      <div class="shexplores">
         <hr>
         <div class="section-title">
           <h2>SheXplores</h2>
@@ -430,13 +430,13 @@
           <label for="inputimage4" class="col-sm-2 col-form-label">Images of products (maximum 6 images with image name
              as productname_price)</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage4" name="img" accept="image/*" multiple>
+            <input type="file"  id="inputimage4" name="SheXplores-Images of products" accept="image/*" multiple>
           </div>
         </div>
         <div class="form-group row">
           <label for="inputvideo2" class="col-sm-2 col-form-label">Video of product </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputvideo2" name="video" accept="video/*">
+            <input type="file"  id="inputvideo2" name="SheXplores-Video of product" accept="video/*">
           </div>
         </div>
         <fieldset class="form-group">
@@ -444,13 +444,13 @@
             <legend class="col-form-label col-sm-2 pt-0">Interested in other entrepreneurial activities? </legend>
             <div class="col-sm-10">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios1" value="option1" checked>
                 <label class="form-check-label" for="gridRadios1">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios2" value="option2">
                 <label class="form-check-label" for="gridRadios2">
                   No
                 </label>
@@ -469,31 +469,31 @@
         <div class="form-group row">
           <label for="inputfile1" class="col-sm-2 col-form-label">Reference or similar style designs</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputfile1">
+            <input type="file"  id="inputfile1" name="Designing-Reference">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent5" class="col-sm-2 col-form-label">Purpose</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent5" placeholder="Enter the content">
+            <input type="text" class="form-control" id="inputcontent5" name="Designing-Purpose" placeholder="Enter the content">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent6" class="col-sm-2 col-form-label">Color that you expect </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent6" placeholder="Enter the colours">
+            <input type="text" class="form-control" id="inputcontent6" name="Designing-Color expected" placeholder="Enter the colours">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent7" class="col-sm-2 col-form-label">Other supporting documents </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent7" placeholder="Enter the link contain documents">
+            <input type="text" class="form-control" id="inputcontent7" name="Designing-supporting documents" placeholder="Enter the link contain documents">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputimage5" class="col-sm-2 col-form-label">Pictures to be included in posters </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage5" name="img" accept="image/*" multiple>
+            <input type="file"  id="inputimage5" name="Designing-Pictures to be included in posters" accept="image/*" multiple>
           </div>
         </div>
       </div>
@@ -507,19 +507,19 @@
         <div class="form-group row">
           <label for="inputcontent8" class="col-sm-2 col-form-label">Content</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent8" placeholder="Enter the content">
+            <input type="text" class="form-control" id="inputcontent8" name="Web_development-Content" placeholder="Enter the content">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent9" class="col-sm-2 col-form-label">Requirements for your website </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent9" placeholder="Enter the colours">
+            <input type="text" class="form-control" id="inputcontent9" name="web_development-Requirements" placeholder="Enter the colours">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputimage6" class="col-sm-2 col-form-label">Photos </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage6" name="img" accept="image/*" multiple>
+            <input type="file"  id="inputimage6" name="web_development-Photos" accept="image/*" multiple>
           </div>
         </div>
       </div>
@@ -535,31 +535,31 @@
             <legend class="col-form-label col-sm-2 pt-0">In which community do you wish to join? </legend>
             <div class="col-sm-10">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option1">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios3" value="option1">
                 <label class="form-check-label" for="gridRadios3">
                   Arts and craft
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option2">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios4" value="option2">
                 <label class="form-check-label" for="gridRadios4">
                   Baby products
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option1">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios5" value="option1">
                 <label class="form-check-label" for="gridRadios5">
                   Boutique
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option2">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios6" value="option2">
                 <label class="form-check-label" for="gridRadios6">
                   Cosmetics
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value="option2">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios7" value="option2">
                 <label class="form-check-label" for="gridRadios7">
                   Others
                 </label>
@@ -570,13 +570,13 @@
         <div class="form-group row">
           <label for="inputcontent10" class="col-sm-2 col-form-label">Mention the community if chosen others</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent10" placeholder="Enter the content">
+            <input type="text" class="form-control" id="inputcontent10" name="community_formation-if chosen others" placeholder="Enter the content">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputcontent11" class="col-sm-2 col-form-label">What do you expect from the community? </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputcontent11" placeholder="Enter the colours">
+            <input type="text" class="form-control" id="inputcontent11" name="community_formation-Expectation from community" placeholder="Enter the colours">
           </div>
         </div>
       </div>
@@ -611,6 +611,64 @@
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
 
+      <!---
+      <script>
+        
+        const lookbook = document.querySelector(".lookbook")
+        const shetales = document.querySelector(".shetales")
+        const shexplores = document.querySelector(".shexplores")
+        const designing = document.querySelector(".designing")
+        const webDevelopment = document.querySelector(".web_development")
+        const communityFormation = document.querySelector(".community_formation")
+        const sections = [lookbook, shetales, shexplores, designing, webDevelopment, communityFormation];
+        // console.log(lookbook, shetales, shexplores, designing, webDevelopment, communityFormation);
+        
+        function view_section(name) {
+          if(name==="lookbook") {
+            lookbook.style.display = "block"
+            sections.forEach(section => section != lookbook ? section.style.display = "none" : null)
+          }
+          if(name==="shetales") {
+            shetales.style.display = "block"
+            sections.forEach(section => section != shetales ? section.style.display = "none" : null)
+          }
+          if(name==="shexplores") {
+            shexplores.style.display = "block"
+            sections.forEach(section => section != shexplores ? section.style.display = "none" : null)
+          }
+          if(name==="designing") {
+            designing.style.display = "block"
+            sections.forEach(section => section != designing ? section.style.display = "none" : null)
+          }
+          if(name==="web_development") {
+            webDevelopment.style.display = "block"
+            sections.forEach(section => section != webDevelopment ? section.style.display = "none" : null)
+          }
+          if(name==="community_formation") {
+            communityFormation.style.display = "block"
+            sections.forEach(section => section != communityFormation ? section.style.display = "none" : null)
+          }
+        }
+
+          lookbook.style.display = "none"
+          shetales.style.display = "none"
+          shexplores.style.display = "none"
+          designing.style.display = "none"
+          webDevelopment.style.display = "none"
+          communityFormation.style.display = "none"
+
+          const inputs = Array.from(document.querySelectorAll(".requirements input"))
+          inputs.forEach(input => {
+            input.addEventListener("change", () => {
+              inputs.forEach(i => {
+                if(i.checked) {
+                  // console.log(i.value)
+                  view_section(i.value)
+                }
+              })
+            })
+          })
+      </script> -->
 
 </body>
 
