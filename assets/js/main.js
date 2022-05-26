@@ -251,3 +251,31 @@ const lookbook = document.querySelector(".lookbook")
               })
             })
           })
+
+          
+          let myform =document.getElementById("myForm")
+          let closebutton = document.getElementById("close-msg")
+          const model = document.querySelector("#msg-model")
+        
+          async function formsubmit(e) {
+              e.preventDefault()
+              const data = new FormData(myform);
+              const res = await fetch("https://script.google.com/macros/s/AKfycbwo2tsnhIVvC69WeS3clj6u6EM_8qLl8Iq6FqkgwAfJKZ8-tKjgwIshxCRM8xZmX_QXRw/exec",
+                {method:'post',body:data})
+              if(res.ok){
+                const resdata = await res.json()
+                //console.log(resdata)
+                if(resdata.result === "success"){
+                  //document.getElementsByClassName("model").style.display="block"
+                  console.log(model)
+                  model.style.display="block"
+                  }
+                }
+              }
+
+        function closemodel(e){
+          model.style.display="none"
+        }
+
+        closebutton.addEventListener("click",closemodel)
+        myform.addEventListener('submit',formsubmit)

@@ -87,7 +87,7 @@
             <div class="carousel-item active">
               <div class="carousel-container">
                 <h2 class="animated fadeInDown">Services we provide</h2>
-                <p class="animated fadeInUp">To Be Updated Soon</p>
+                <!-- <p class="animated fadeInUp">To Be Updated Soon</p> -->
 
               </div>
             </div>
@@ -282,7 +282,7 @@
   <br>
   <div class="container">
     <div class="col-lg-10">
-    <form method="POST"  action="https://script.google.com/macros/s/AKfycbzasoFnHcntyfIIHx5eTtT1sECaPIl-d017ySgt4zYTN9nya5D4MdNzyfgMJT08pyIvww/exec">
+    <form method="POST"  name="myForm" id="myForm">
       <!--form main-->
       <div class="form-group row">
         <label for="inputInstaLink" class="col-sm-2 col-form-label">Instagram link</label>
@@ -365,7 +365,7 @@
         <div class="form-group row">
           <label for="inputimage1" class="col-sm-2 col-form-label">Images of your work(10 in number)</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage1" name="LookBook-images of work" accept="image/*" multiple>
+            <input type="text" class="form-control" id="inputimage1" name="LookBook-images of work" placeholder="Enter the url of drive link">
           </div>
         </div>
         <div class="form-group row">
@@ -377,7 +377,7 @@
         <div class="form-group row">
           <label for="inputimage2" class="col-sm-2 col-form-label">2 solo picture of entrepreneur </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage2" name="LookBook-2 solo picture of entrepreneur" accept="image/*" multiple>
+            <input type="text" class="form-control"  id="inputimage2" name="LookBook-2 solo picture of entrepreneur" placeholder="Enter the url of drive link">
           </div>
         </div>
         <div class="form-group row">
@@ -397,13 +397,13 @@
         <div class="form-group row">
           <label for="inputimage3" class="col-sm-2 col-form-label">8 solo pictures of entrepreneur</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage3" name="SheTales-8 solo pictures of entrepreneur" accept="image/*" multiple>
+            <input type="text" class="form-control"  id="inputimage3" name="SheTales-8 solo pictures of entrepreneur" placeholder="Enter the url of drive link">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputvideo1" class="col-sm-2 col-form-label">Before video </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputvideo1" name="SheTales-Before video" accept="video/*">
+            <input type="text" class="form-control"  id="inputvideo1" name="SheTales-Before video" placeholder="Enter the url of drive link/ youtube link">
           </div>
         </div>
         <div class="form-group row">
@@ -430,13 +430,13 @@
           <label for="inputimage4" class="col-sm-2 col-form-label">Images of products (maximum 6 images with image name
              as productname_price)</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage4" name="SheXplores-Images of products" accept="image/*" multiple>
+            <input type="text" class="form-control"  id="inputimage4" name="SheXplores-Images of products" placeholder="Enter the url of drive link">
           </div>
         </div>
         <div class="form-group row">
           <label for="inputvideo2" class="col-sm-2 col-form-label">Video of product </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputvideo2" name="SheXplores-Video of product" accept="video/*">
+            <input type="text" class="form-control"  id="inputvideo2" name="SheXplores-Video of product" placeholder="Enter the url of drive link">
           </div>
         </div>
         <fieldset class="form-group">
@@ -444,13 +444,13 @@
             <legend class="col-form-label col-sm-2 pt-0">Interested in other entrepreneurial activities? </legend>
             <div class="col-sm-10">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios1" value="option1" checked>
+                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios1" value="yes">
                 <label class="form-check-label" for="gridRadios1">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios2" value="option2">
+                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios2" value="no">
                 <label class="form-check-label" for="gridRadios2">
                   No
                 </label>
@@ -469,7 +469,7 @@
         <div class="form-group row">
           <label for="inputfile1" class="col-sm-2 col-form-label">Reference or similar style designs</label>
           <div class="col-sm-10">
-            <input type="file"  id="inputfile1" name="Designing-Reference">
+            <input type="text" class="form-control"  id="inputfile1" name="Designing-Reference" placeholder="Enter the url of drive link">
           </div>
         </div>
         <div class="form-group row">
@@ -493,7 +493,7 @@
         <div class="form-group row">
           <label for="inputimage5" class="col-sm-2 col-form-label">Pictures to be included in posters </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage5" name="Designing-Pictures to be included in posters" accept="image/*" multiple>
+            <input type="text" class="form-control"  id="inputimage5" name="Designing-Pictures to be included in posters" placeholder="Enter the url of drive link">
           </div>
         </div>
       </div>
@@ -519,7 +519,7 @@
         <div class="form-group row">
           <label for="inputimage6" class="col-sm-2 col-form-label">Photos </label>
           <div class="col-sm-10">
-            <input type="file"  id="inputimage6" name="web_development-Photos" accept="image/*" multiple>
+            <input type="text" class="form-control" id="inputimage6" name="web_development-Photos" placeholder="Enter the url of drive link">
           </div>
         </div>
       </div>
@@ -588,6 +588,23 @@
       </div>
     </form>
   </div>
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="msg-model">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The form has been submitted successfully!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-msg">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Thank you for getting in touch!</h3>
+          <p>We appreciate you contacting us. Our team will get back in touch with you soon!</p>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -669,6 +686,36 @@
             })
           })
       </script> -->
+
+      <!-- <script>
+          let myform =document.getElementById("myForm")
+          let closebutton = document.getElementById("close-msg")
+          const model = document.querySelector("#msg-model")
+        
+          async function formsubmit(e) {
+              e.preventDefault()
+              const data = new FormData(myform);
+              const res = await fetch("https://script.google.com/macros/s/AKfycbwo2tsnhIVvC69WeS3clj6u6EM_8qLl8Iq6FqkgwAfJKZ8-tKjgwIshxCRM8xZmX_QXRw/exec",
+                {method:'post',body:data})
+              if(res.ok){
+                const resdata = await res.json()
+                //console.log(resdata)
+                if(resdata.result === "success"){
+                  //document.getElementsByClassName("model").style.display="block"
+                  console.log(model)
+                  model.style.display="block"
+                  }
+                }
+              }
+
+        function closemodel(e){
+          model.style.display="none"
+        }
+
+        closebutton.addEventListener("click",closemodel)
+        myform.addEventListener('submit',formsubmit)
+      </script> -->
+
 
 </body>
 
