@@ -268,6 +268,7 @@ const lookbook = document.querySelector(".lookbook")
                 //console.log(resdata)
                 if(resdata.result === "success"){
                   alertmsg.style.display="block"
+                  document.getElementById("jump").scrollIntoView({behavior: 'smooth'});
                   }
                 }
               }
