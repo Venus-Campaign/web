@@ -282,6 +282,8 @@
   <br>
   <div class="container">
     <div class="col-lg-10">
+      <h2>Registration Form</h2>
+      <br>
     <form method="POST"  name="myForm" id="myForm">
       <!--form main-->
       <div class="form-group row">
@@ -590,19 +592,13 @@
   </div>
   </div>
 
-  <div class="modal" tabindex="-1" role="dialog" id="msg-model">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">The form has been submitted successfully!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-msg">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <h3>Thank you for getting in touch!</h3>
-          <p>We appreciate you contacting us. Our team will get back in touch with you soon!</p>
-        </div>
+  <div class="container">
+    <div class="col-lg-10">
+      <div class="alert alert-success" role="alert" id="success-alert">
+        <h4 class="alert-heading">The form has been submitted successfully!</h4>
+        <p>Thank you for getting in touch!</p>
+        <hr>
+        <p class="mb-0">We appreciate you contacting us. Our team will get back in touch with you soon!</p>
       </div>
     </div>
   </div>
@@ -627,95 +623,6 @@
 
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
-
-      <!---
-      <script>
-        
-        const lookbook = document.querySelector(".lookbook")
-        const shetales = document.querySelector(".shetales")
-        const shexplores = document.querySelector(".shexplores")
-        const designing = document.querySelector(".designing")
-        const webDevelopment = document.querySelector(".web_development")
-        const communityFormation = document.querySelector(".community_formation")
-        const sections = [lookbook, shetales, shexplores, designing, webDevelopment, communityFormation];
-        // console.log(lookbook, shetales, shexplores, designing, webDevelopment, communityFormation);
-        
-        function view_section(name) {
-          if(name==="lookbook") {
-            lookbook.style.display = "block"
-            sections.forEach(section => section != lookbook ? section.style.display = "none" : null)
-          }
-          if(name==="shetales") {
-            shetales.style.display = "block"
-            sections.forEach(section => section != shetales ? section.style.display = "none" : null)
-          }
-          if(name==="shexplores") {
-            shexplores.style.display = "block"
-            sections.forEach(section => section != shexplores ? section.style.display = "none" : null)
-          }
-          if(name==="designing") {
-            designing.style.display = "block"
-            sections.forEach(section => section != designing ? section.style.display = "none" : null)
-          }
-          if(name==="web_development") {
-            webDevelopment.style.display = "block"
-            sections.forEach(section => section != webDevelopment ? section.style.display = "none" : null)
-          }
-          if(name==="community_formation") {
-            communityFormation.style.display = "block"
-            sections.forEach(section => section != communityFormation ? section.style.display = "none" : null)
-          }
-        }
-
-          lookbook.style.display = "none"
-          shetales.style.display = "none"
-          shexplores.style.display = "none"
-          designing.style.display = "none"
-          webDevelopment.style.display = "none"
-          communityFormation.style.display = "none"
-
-          const inputs = Array.from(document.querySelectorAll(".requirements input"))
-          inputs.forEach(input => {
-            input.addEventListener("change", () => {
-              inputs.forEach(i => {
-                if(i.checked) {
-                  // console.log(i.value)
-                  view_section(i.value)
-                }
-              })
-            })
-          })
-      </script> -->
-
-      <!-- <script>
-          let myform =document.getElementById("myForm")
-          let closebutton = document.getElementById("close-msg")
-          const model = document.querySelector("#msg-model")
-        
-          async function formsubmit(e) {
-              e.preventDefault()
-              const data = new FormData(myform);
-              const res = await fetch("https://script.google.com/macros/s/AKfycbwo2tsnhIVvC69WeS3clj6u6EM_8qLl8Iq6FqkgwAfJKZ8-tKjgwIshxCRM8xZmX_QXRw/exec",
-                {method:'post',body:data})
-              if(res.ok){
-                const resdata = await res.json()
-                //console.log(resdata)
-                if(resdata.result === "success"){
-                  //document.getElementsByClassName("model").style.display="block"
-                  console.log(model)
-                  model.style.display="block"
-                  }
-                }
-              }
-
-        function closemodel(e){
-          model.style.display="none"
-        }
-
-        closebutton.addEventListener("click",closemodel)
-        myform.addEventListener('submit',formsubmit)
-      </script> -->
-
 
 </body>
 
