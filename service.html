@@ -87,7 +87,7 @@
             <div class="carousel-item active">
               <div class="carousel-container">
                 <h2 class="animated fadeInDown">Services we provide</h2>
-                <p class="animated fadeInUp">To Be Updated Soon</p>
+                <!-- <p class="animated fadeInUp">To Be Updated Soon</p> -->
 
               </div>
             </div>
@@ -279,6 +279,332 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7I-4cocg2MVVo1ielnKVMFyki4yJyU9mwkO8eIWU1wdyqhg/viewform" class="btn btn-lg" style="background:#5F2965;color:white;">Click here to apply</a>
   </div>--->
 
+  <br>
+  <div class="container">
+    <div class="col-lg-10">
+      <h2>Registration Form</h2>
+      <br>
+    <form method="POST"  name="myForm" id="myForm">
+      <!--form main-->
+      <div class="form-group row">
+        <label for="inputInstaLink" class="col-sm-2 col-form-label">Instagram link</label>
+        <div class="col-sm-10">
+          <input type="url" name="Instagram link" class="form-control" id="inlineFormInputUrl" placeholder="Enter the Instagram link" required>
+          <div class="invalid-feedback">
+            Please provide a valid url.
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputName1" class="col-sm-2 col-form-label">Name of startup</label>
+        <div class="col-sm-10">
+          <input type="text" name="Name of startup" class="form-control" id="inputName1" placeholder="Enter the name" required>
+          <div class="invalid-feedback">
+            Please provide a valid name.
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputName2" class="col-sm-2 col-form-label">Name of entrepreneur</label>
+        <div class="col-sm-10">
+          <input type="text" name="Name of entrepreneur" class="form-control" id="inputName2" placeholder="Enter the name" required>
+          <div class="invalid-feedback">
+            Please provide a valid name.
+          </div>
+        </div>
+      </div>
+      
+      <fieldset class="form-group requirements">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Requirements </legend>
+          <div class="col-sm-10 requirements-radios">
+            <div class="form-check">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios8" value="lookbook">
+              <label class="form-check-label" for="gridRadios8">
+                Lookbook
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios9" value="shetales">
+              <label class="form-check-label" for="gridRadios9">
+                She tales
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios10" value="shexplores">
+              <label class="form-check-label" for="gridRadios10">
+                SheXplores
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios11" value="designing">
+              <label class="form-check-label" for="gridRadios11">
+                Designing
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios12" value="web_development">
+              <label class="form-check-label" for="gridRadios12">
+                Website development
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="requirements" type="radio" name="gridRadios" id="gridRadios13" value="community_formation">
+              <label class="form-check-label" for="gridRadios13">
+                Community formation
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!--LookBook Form-->
+      <div class="lookbook">
+        <hr>
+        <div class="section-title">
+          <h2>LookBook</h2>
+        </div>
+        <div class="form-group row">
+          <label for="inputimage1" class="col-sm-2 col-form-label">Images of your work(10 in number)</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputimage1" name="LookBook-images of work" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent1" class="col-sm-2 col-form-label">About the firm content(in 250 words) </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent1" name="LookBook-About the firm content" placeholder="Enter the content">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputimage2" class="col-sm-2 col-form-label">2 solo picture of entrepreneur </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputimage2" name="LookBook-2 solo picture of entrepreneur" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent2" class="col-sm-2 col-form-label">About the entrepreneur content(in 250 words) </label>
+          <div class="col-sm-10">
+            <input type="text" name="LookBook-About the entrepreneur content" class="form-control" id="inputcontent2" placeholder="Enter the content">
+          </div>
+        </div>
+      </div>
+
+       <!--SheTales Form-->
+       <div class="shetales">
+        <hr>
+        <div class="section-title">
+          <h2>SheTales</h2>
+        </div>
+        <div class="form-group row">
+          <label for="inputimage3" class="col-sm-2 col-form-label">8 solo pictures of entrepreneur</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputimage3" name="SheTales-8 solo pictures of entrepreneur" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputvideo1" class="col-sm-2 col-form-label">Before video </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputvideo1" name="SheTales-Before video" placeholder="Enter the url of drive link/ youtube link">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent3" class="col-sm-2 col-form-label">About the firm content(in 250 words) </label>
+          <div class="col-sm-10">
+            <input type="text" name="SheTales-About the firm content" class="form-control" id="inputcontent3" placeholder="Enter the content">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent4" class="col-sm-2 col-form-label">About the entrepreneur content(in 250 words) </label>
+          <div class="col-sm-10">
+            <input type="text" name="SheTales-About the entrepreneur content" class="form-control" id="inputcontent4" placeholder="Enter the content">
+          </div>
+        </div>
+      </div>
+
+      <!--SheXplores Form-->
+      <div class="shexplores">
+        <hr>
+        <div class="section-title">
+          <h2>SheXplores</h2>
+        </div>
+        <div class="form-group row">
+          <label for="inputimage4" class="col-sm-2 col-form-label">Images of products (maximum 6 images with image name
+             as productname_price)</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputimage4" name="SheXplores-Images of products" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputvideo2" class="col-sm-2 col-form-label">Video of product </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputvideo2" name="SheXplores-Video of product" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Interested in other entrepreneurial activities? </legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios1" value="yes">
+                <label class="form-check-label" for="gridRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="SheXplores-Interested in other entrepreneurial activities" id="gridRadios2" value="no">
+                <label class="form-check-label" for="gridRadios2">
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+       <!--Designing Form-->
+       <div class="designing">
+        <hr>
+        <div class="section-title">
+          <h2>Designing</h2>
+        </div>
+        <div class="form-group row">
+          <label for="inputfile1" class="col-sm-2 col-form-label">Reference or similar style designs</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputfile1" name="Designing-Reference" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent5" class="col-sm-2 col-form-label">Purpose</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent5" name="Designing-Purpose" placeholder="Enter the content">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent6" class="col-sm-2 col-form-label">Color that you expect </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent6" name="Designing-Color expected" placeholder="Enter the colours">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent7" class="col-sm-2 col-form-label">Other supporting documents </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent7" name="Designing-supporting documents" placeholder="Enter the link contain documents">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputimage5" class="col-sm-2 col-form-label">Pictures to be included in posters </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control"  id="inputimage5" name="Designing-Pictures to be included in posters" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+      </div>
+
+      <!--Web Development Form-->
+      <div class="web_development">
+        <hr>
+        <div class="section-title">
+          <h2>Web Development</h2>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent8" class="col-sm-2 col-form-label">Content</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent8" name="Web_development-Content" placeholder="Enter the content">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent9" class="col-sm-2 col-form-label">Requirements for your website </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent9" name="web_development-Requirements" placeholder="Enter the colours">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputimage6" class="col-sm-2 col-form-label">Photos </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputimage6" name="web_development-Photos" placeholder="Enter the url of drive link">
+          </div>
+        </div>
+      </div>
+
+      <!--Community Formation Form-->
+      <div class="community_formation">
+        <hr>
+        <div class="section-title">
+          <h2>Community Formation</h2>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">In which community do you wish to join? </legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios3" value="Arts and craft">
+                <label class="form-check-label" for="gridRadios3">
+                  Arts and craft
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios4" value="Baby products">
+                <label class="form-check-label" for="gridRadios4">
+                  Baby products
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios5" value="Boutique">
+                <label class="form-check-label" for="gridRadios5">
+                  Boutique
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios6" value="Cosmetics">
+                <label class="form-check-label" for="gridRadios6">
+                  Cosmetics
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="community_formation-Community wish to join" id="gridRadios7" value="Others">
+                <label class="form-check-label" for="gridRadios7">
+                  Others
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group row">
+          <label for="inputcontent10" class="col-sm-2 col-form-label">Mention the community if chosen others</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent10" name="community_formation-if chosen others" placeholder="Enter the content">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputcontent11" class="col-sm-2 col-form-label">What do you expect from the community? </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputcontent11" name="community_formation-Expectation from community" placeholder="Enter the colours">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="col-lg-10">
+      <div class="alert alert-success" role="alert" id="success-alert">
+        <h4 class="alert-heading">The form has been submitted successfully!</h4>
+        <p>Thank you for getting in touch!</p>
+        <hr>
+        <p class="mb-0">We appreciate you contacting us. Our team will get back in touch with you soon!</p>
+      </div>
+    </div>
+  </div>
+
+  <span id='jump'></span>
+
 
 
       </main><!-- End #main -->
@@ -299,7 +625,6 @@
 
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
-
 
 </body>
 
